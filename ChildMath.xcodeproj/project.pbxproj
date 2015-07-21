@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		29EE08261B5D735500CA07A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE08251B5D735500CA07A5 /* AppDelegate.swift */; };
-		29EE08281B5D735500CA07A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE08271B5D735500CA07A5 /* ViewController.swift */; };
-		29EE082B1B5D735500CA07A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EE08291B5D735500CA07A5 /* Main.storyboard */; };
 		29EE082E1B5D735500CA07A5 /* ChildMath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29EE082C1B5D735500CA07A5 /* ChildMath.xcdatamodeld */; };
-		29EE08301B5D735500CA07A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EE082F1B5D735500CA07A5 /* Assets.xcassets */; };
-		29EE08331B5D735500CA07A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EE08311B5D735500CA07A5 /* LaunchScreen.storyboard */; };
 		29EE083E1B5D735500CA07A5 /* ChildMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE083D1B5D735500CA07A5 /* ChildMathTests.swift */; };
 		29EE08491B5D735500CA07A5 /* ChildMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE08481B5D735500CA07A5 /* ChildMathUITests.swift */; };
+		29EE08571B5D739300CA07A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EE08561B5D739300CA07A5 /* Assets.xcassets */; };
+		29EE085B1B5D73DF00CA07A5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE08581B5D73DF00CA07A5 /* FirstViewController.swift */; };
+		29EE085C1B5D73DF00CA07A5 /* MathBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE08591B5D73DF00CA07A5 /* MathBrain.swift */; };
+		29EE085D1B5D73DF00CA07A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EE085A1B5D73DF00CA07A5 /* Main.storyboard */; };
+		29EE085F1B5D73FB00CA07A5 /* LinearCongruentialGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE085E1B5D73FB00CA07A5 /* LinearCongruentialGenerator.swift */; };
+		29EE08661B5DC2E300CA07A5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EE08651B5DC2E300CA07A5 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +38,21 @@
 
 /* Begin PBXFileReference section */
 		29EE08221B5D735500CA07A5 /* ChildMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		29EE08251B5D735500CA07A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29EE08271B5D735500CA07A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		29EE082A1B5D735500CA07A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29EE08251B5D735500CA07A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ChildMath/AppDelegate.swift; sourceTree = "<group>"; };
 		29EE082D1B5D735500CA07A5 /* ChildMath.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChildMath.xcdatamodel; sourceTree = "<group>"; };
-		29EE082F1B5D735500CA07A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29EE08321B5D735500CA07A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		29EE08341B5D735500CA07A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EE08341B5D735500CA07A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChildMath/Info.plist; sourceTree = "<group>"; };
 		29EE08391B5D735500CA07A5 /* ChildMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EE083D1B5D735500CA07A5 /* ChildMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildMathTests.swift; sourceTree = "<group>"; };
 		29EE083F1B5D735500CA07A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29EE08441B5D735500CA07A5 /* ChildMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EE08481B5D735500CA07A5 /* ChildMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildMathUITests.swift; sourceTree = "<group>"; };
 		29EE084A1B5D735500CA07A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EE08561B5D739300CA07A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29EE08581B5D73DF00CA07A5 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		29EE08591B5D73DF00CA07A5 /* MathBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathBrain.swift; sourceTree = "<group>"; };
+		29EE085A1B5D73DF00CA07A5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		29EE085E1B5D73FB00CA07A5 /* LinearCongruentialGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearCongruentialGenerator.swift; sourceTree = "<group>"; };
+		29EE08651B5DC2E300CA07A5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,16 @@
 			isa = PBXGroup;
 			children = (
 				29EE08241B5D735500CA07A5 /* ChildMath */,
+				29EE08641B5DC21D00CA07A5 /* FrameWorks */,
 				29EE083C1B5D735500CA07A5 /* ChildMathTests */,
 				29EE08471B5D735500CA07A5 /* ChildMathUITests */,
 				29EE08231B5D735500CA07A5 /* Products */,
+				29EE08561B5D739300CA07A5 /* Assets.xcassets */,
+				29EE08651B5DC2E300CA07A5 /* Launch Screen.storyboard */,
+				29EE08341B5D735500CA07A5 /* Info.plist */,
+				29EE082C1B5D735500CA07A5 /* ChildMath.xcdatamodeld */,
+				29EE08251B5D735500CA07A5 /* AppDelegate.swift */,
+				29EE085E1B5D73FB00CA07A5 /* LinearCongruentialGenerator.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +110,9 @@
 		29EE08241B5D735500CA07A5 /* ChildMath */ = {
 			isa = PBXGroup;
 			children = (
-				29EE08251B5D735500CA07A5 /* AppDelegate.swift */,
-				29EE08271B5D735500CA07A5 /* ViewController.swift */,
-				29EE08291B5D735500CA07A5 /* Main.storyboard */,
-				29EE082F1B5D735500CA07A5 /* Assets.xcassets */,
-				29EE08311B5D735500CA07A5 /* LaunchScreen.storyboard */,
-				29EE08341B5D735500CA07A5 /* Info.plist */,
-				29EE082C1B5D735500CA07A5 /* ChildMath.xcdatamodeld */,
+				29EE08581B5D73DF00CA07A5 /* FirstViewController.swift */,
+				29EE08591B5D73DF00CA07A5 /* MathBrain.swift */,
+				29EE085A1B5D73DF00CA07A5 /* Main.storyboard */,
 			);
 			path = ChildMath;
 			sourceTree = "<group>";
@@ -126,6 +133,14 @@
 				29EE084A1B5D735500CA07A5 /* Info.plist */,
 			);
 			path = ChildMathUITests;
+			sourceTree = "<group>";
+		};
+		29EE08641B5DC21D00CA07A5 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FrameWorks;
+			path = ChildMath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +210,7 @@
 				TargetAttributes = {
 					29EE08211B5D735500CA07A5 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 6F4UYTCUBU;
 					};
 					29EE08381B5D735500CA07A5 = {
 						CreatedOnToolsVersion = 7.0;
@@ -231,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29EE08331B5D735500CA07A5 /* LaunchScreen.storyboard in Resources */,
-				29EE08301B5D735500CA07A5 /* Assets.xcassets in Resources */,
-				29EE082B1B5D735500CA07A5 /* Main.storyboard in Resources */,
+				29EE085D1B5D73DF00CA07A5 /* Main.storyboard in Resources */,
+				29EE08661B5DC2E300CA07A5 /* Launch Screen.storyboard in Resources */,
+				29EE08571B5D739300CA07A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EE085C1B5D73DF00CA07A5 /* MathBrain.swift in Sources */,
+				29EE085F1B5D73FB00CA07A5 /* LinearCongruentialGenerator.swift in Sources */,
+				29EE085B1B5D73DF00CA07A5 /* FirstViewController.swift in Sources */,
 				29EE082E1B5D735500CA07A5 /* ChildMath.xcdatamodeld in Sources */,
-				29EE08281B5D735500CA07A5 /* ViewController.swift in Sources */,
 				29EE08261B5D735500CA07A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,25 +312,6 @@
 			targetProxy = 29EE08451B5D735500CA07A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		29EE08291B5D735500CA07A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29EE082A1B5D735500CA07A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		29EE08311B5D735500CA07A5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29EE08321B5D735500CA07A5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		29EE084B1B5D735500CA07A5 /* Debug */ = {
@@ -402,10 +401,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ChildMath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..ChildMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -413,10 +416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ChildMath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..ChildMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -513,7 +520,8 @@
 				29EE082D1B5D735500CA07A5 /* ChildMath.xcdatamodel */,
 			);
 			currentVersion = 29EE082D1B5D735500CA07A5 /* ChildMath.xcdatamodel */;
-			path = ChildMath.xcdatamodeld;
+			name = ChildMath.xcdatamodeld;
+			path = ChildMath/ChildMath.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
