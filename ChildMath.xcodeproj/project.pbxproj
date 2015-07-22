@@ -494,6 +494,7 @@
 				29EE084F1B5D735500CA07A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29EE08501B5D735500CA07A5 /* Build configuration list for PBXNativeTarget "ChildMathTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +503,7 @@
 				29EE08521B5D735500CA07A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29EE08531B5D735500CA07A5 /* Build configuration list for PBXNativeTarget "ChildMathUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +512,7 @@
 				29EE08551B5D735500CA07A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,13 +7,37 @@
 //
 
 import UIKit
+let theDocumentsFolderForSavingFiles = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+
+let theFilename = "/theUserFile.txt"
+
+let thePathToThefile = theDocumentsFolderForSavingFiles.stringByAppendingString(theFilename)
 
 class FirstViewController: UIViewController {
+    
+    func saveData(){
+        var theStringWeSave = "adskfa .;"
+        theStringWeSave += theStringWeSave
+        
+        let fileManager = NSFileManager.defaultManager()
+        if (!fileManager.fileExistsAtPath(thePathToThefile)){
+            do{
+                let fileToBeWritten = try theStringWeSave.writeToFile(thePathToThefile, atomically: true, encoding: NSUTF8StringEncoding)
+                print("we wrote and fileToBeWritten is \(fileToBeWritten)")
+                //print(fileToBeWritten)
+            }catch{print(error)}
+        }else{print("file already exists")}
+
+    }
+    
+    
+    
+    
     let math: MathBrain = MathBrain()
     lazy var problem: (num1: Int, num2: Int, op: String) = (6,9,"M")
     private var time1: NSTimeInterval = 1
     private var time2: NSTimeInterval = 1
-    private var iterationsOriginal = 9
+    private var iterationsOriginal = 104
     private lazy var iterations = 1
     private var reDo = false //turn this on after all is done
     private let randX: LinearCongruentialGenerator = LinearCongruentialGenerator()
@@ -35,6 +59,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var AdditionLabel: UILabel!
     @IBOutlet weak var MultiplicationLabel: UILabel!
     @IBOutlet weak var SubstractionLabel: UILabel!
+    @IBOutlet weak var HitLabel: UILabel!
     @IBAction func NumberButtonTheUserPresses(sender: UIButton) {
         let Digit = sender.currentTitle!
         DisplayScreen2.text? += Digit
@@ -125,7 +150,7 @@ class FirstViewController: UIViewController {
         let operation = gatherOperations()
         problem = math.sendProblem(operation)
         if reDo {problem = math.sendProblem(reDo)} //during reDo, we just get it
-        if problem.op == "Done" {congrats(reDo); return} //return is like break
+        if problem.op == "Done" {congrats(reDo); problem.op = "M"; return} //return is like break // "Done" is just a cheap proxy communication, so get rid of it before it causes problems.
         let opStr = getOperationSymbol(problem.2)
         DisplayScreen1.text = "\(problem.0) \(opStr) \(problem.1)"
         time1 = (NSDate(timeIntervalSinceNow: 1)).timeIntervalSinceReferenceDate
@@ -139,6 +164,7 @@ class FirstViewController: UIViewController {
         for _ in 0 ... count2 {st2 += "🐹"}
         if iterations-- < 1 {congrats(); str = ""; reDo = true}
         DisplayBottom1.text = "🌽" + str + st2
+        HitLabel.text = math.reportAdjustStr()
     }
     
     func interval(){
@@ -157,6 +183,7 @@ class FirstViewController: UIViewController {
     func pauseTen(){
         DisplayScreen1.text = ""
         DisplayScreen2.text = ""
+        DisplayScreen3.text = ""
         //waiting 3 seconds before coming to this func.
         displayProblem()
     }
@@ -178,7 +205,7 @@ class FirstViewController: UIViewController {
         DisplayScreen3.text = "SuPER!!  CONGRATS!"
         DisplayScreen2.text = "You R truly Done"
         DisplayScreen1.text = "U R the GOD of food!; Reset for More"
-        DisplayBottom3.text = "You can show Your MomDad; U R Great!"
+        DisplayBottom3.text = "🌽🐹🐹🐹🐹🐹You can show Your MomDad; U R Great! 🌽🐹🐹🐹🐹🐹"
         iterations=iterationsOriginal
         reDo = false
     }

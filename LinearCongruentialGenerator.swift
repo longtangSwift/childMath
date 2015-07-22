@@ -21,7 +21,7 @@ class LinearCongruentialGenerator: RandomNumberGenerator {
     private var lastRandom = 42.0 + (NSDate(timeIntervalSince1970: 4597865)).timeIntervalSinceReferenceDate
     private let m = 34359738367.0
     private var a = 3877.02 + abs((NSDate(timeIntervalSince1970: 14234).timeIntervalSinceReferenceDate - NSDate(timeIntervalSinceNow: 1).timeIntervalSinceReferenceDate - 2 * NSDate(timeIntervalSince1970: 14234).timeIntervalSinceReferenceDate)){didSet{print("in LCG, a is: \(a)")}}
-    private let c = 29573.07 + abs(sin(NSDate(timeIntervalSince1970: 14234).timeIntervalSinceReferenceDate - NSDate(timeIntervalSinceNow: 1).timeIntervalSinceReferenceDate))
+    private var c = 29573.07 + abs(sin(NSDate(timeIntervalSince1970: 14234).timeIntervalSinceReferenceDate - NSDate(timeIntervalSinceNow: 1).timeIntervalSinceReferenceDate)){didSet{print("in LCg, a is \(a)")}}
     private var d = 1.0
     private var e = 1.0
     

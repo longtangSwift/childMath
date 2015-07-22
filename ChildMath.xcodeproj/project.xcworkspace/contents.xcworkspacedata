@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ChildMath.xcodeproj">
+      location = "self:/Users/CTMacBookPro/Desktop/ChildMath/ChildMath.xcodeproj">
    </FileRef>
 </Workspace>
